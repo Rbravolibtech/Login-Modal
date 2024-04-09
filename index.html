@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&family=Rokkitt:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+     <script src="https://cdn.tailwindcss.com"></script>
+     <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            sans: ['Mulish', 'sans-serif'],
+            mono: ['Rokkitt', 'monospace'],
+          },
+        },
+      }
+    </script>
+    <title>Login Modal</title>
+</head>
+<body>
+    <!-------------------------------- GLOBAL CONTAINER ----------------------->
+    <div class="flex items-center justify-center min-h-screen bg-rose-50">
+         <!--------------------------CARD CONTAINER ----------------------->
+         <div class="relative flex flex-col m-6 space-y-10 bg-white shadow-2xl rounded-2xl md:flex-row md:space-y-0 md:m-0">
+            <!-----------------------LEFT SIDE OF CARD ----------------------->
+<div class="p-6 md:p-20">
+    <!-----------------------TOP CONTENT----------------------->
+<h2 class="font-mono mb-5 text-4xl font-bold">LOG IN</h2>
+<p class="max-w-sm mb-12 font-sans font-light text-gray-600">Log in to your account to upload or download pictures, videos or music.</p>
+<input type="text" class="w-full p-6 border border-gray-300 rounded-md placeholder:font-sans placeholder:font-light" placeholder="Enter your email address"> 
+</div>
+
+            <!-----------------------RIGHT SIDE OF CARD ----------------------->
+            <img src="image.jpg" alt="water" class="w-[430px] hidden md:block">
+         </div>
+    </div>
+</body>
+</html>
